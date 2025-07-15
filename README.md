@@ -81,8 +81,9 @@ Below are mock users used for development and testing:
 ```
 </details>
 
-<details> 
+<details>
 <summary>Report</summary>
+
 ```json
 {
   "disaster_id": "123",
@@ -92,10 +93,11 @@ Below are mock users used for development and testing:
   "verification_status": "pending"
 }
 ```
-  </details>
-  
+</details>
+
 <details>
-  <summary>Resource</summary>
+<summary>Resource</summary>
+
 ```json
 {
   "disaster_id": "123",
@@ -105,3 +107,4 @@ Below are mock users used for development and testing:
 }
 ```
 </details>
+
