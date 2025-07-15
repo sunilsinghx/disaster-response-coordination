@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const axiosClient = axios.create({
-  baseURL: "http://localhost:3000", // change to your backend URL
+  baseURL: import.meta.env.VITE_BACKEND_URL || "http://localhost:3000", // change to your backend URL
   headers: {
     "Content-Type": "application/json",
   },
