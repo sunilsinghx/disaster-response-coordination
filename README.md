@@ -1,12 +1,12 @@
 # 🌐 Disaster Response Coordination Platform
 
-A backend-heavy disaster management platform built with **Node.js** and **React.js**, designed to assist emergency response using geospatial data, AI, and social media integrations.
+A backend-heavy disaster management built with **Node.js** and **React.js**, designed to assist emergency response using geospatial data, AI, and social media post integrations.
 
 ---
 
 ## 📌 Overview
 
-This project aggregates real-time disaster data, supports AI-based location extraction, and enables geospatial resource tracking to coordinate disaster responses effectively.
+This project aggregates disaster data, supports AI-based location extraction, and enables geospatial resource tracking to coordinate disaster responses effectively.
 
 ---
 
