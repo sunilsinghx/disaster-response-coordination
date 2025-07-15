@@ -265,7 +265,7 @@ export const DisasterList = ({ selectedDisaster, setSelectedDisaster }) => {
             >
               <div className="font-semibold">
                 {d.title}{" "} 
-                {selectedDisaster && 
+                {selectedDisaster && selectedDisaster?.id === d?.id&&
                 <span
                   className={`${
                     selectedDisaster?.id === d?.id
