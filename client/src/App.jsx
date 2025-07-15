@@ -14,6 +14,7 @@ import Navbar from "./components/Layout/Navbar";
 import { Disaster } from "./components/Disaster/Disaster";
 import ProtectedRoute from "./components/Layout/PageLayout";
 import { Report } from "./components/Report/Report";
+import About from "./components/About";
 
 function App() {
   const { currentUser, selectedDisaster } = useAuth();
@@ -66,6 +67,12 @@ function App() {
                 <Report selectedDisaster={selectedDisaster} />
               </PageLayout>
             </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <About/>
           }
         />
 
