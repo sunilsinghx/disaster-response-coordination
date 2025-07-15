@@ -78,8 +78,12 @@ Below are mock users used for development and testing:
   "tags": ["flood", "urgent"],
   "owner_id": "netrunnerX"
 }
-</details> <details> <summary>Report</summary>
+```
+</details>
 
+<details> 
+<summary>Report</summary>
+```json
 {
   "disaster_id": "123",
   "user_id": "citizen1",
@@ -87,12 +91,17 @@ Below are mock users used for development and testing:
   "image_url": "http://example.com/flood.jpg",
   "verification_status": "pending"
 }
-</details> <details> <summary>Resource</summary>
-
+```
+  </details>
+  
+<details>
+  <summary>Resource</summary>
+```json
 {
   "disaster_id": "123",
   "name": "Red Cross Shelter",
   "location_name": "Lower East Side, NYC",
   "type": "shelter"
 }
-</details> ```
+```
+</details>
