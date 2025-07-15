@@ -264,7 +264,8 @@ export const DisasterList = ({ selectedDisaster, setSelectedDisaster }) => {
               }}
             >
               <div className="font-semibold">
-                {d.title}{" "}
+                {d.title}{" "} 
+                {selectedDisaster && 
                 <span
                   className={`${
                     selectedDisaster?.id === d?.id
@@ -273,7 +274,7 @@ export const DisasterList = ({ selectedDisaster, setSelectedDisaster }) => {
                   }`}
                 >
                   selected
-                </span>
+                </span>}
               </div>
               <div className="text-sm text-gray-500">📍 {d.location_name}</div>
               {d.tags && d.tags.length > 0 && (
