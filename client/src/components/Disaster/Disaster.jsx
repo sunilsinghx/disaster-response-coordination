@@ -177,6 +177,7 @@ export const DisasterForm = ({ existingDisaster, onFinish }) => {
 export const DisasterList = ({ selectedDisaster, setSelectedDisaster }) => {
   const [disasterList, setDisasterList] = useState([]);
   const [tag, setTag] = useState("");
+  const [loading,setLoading]=useState(false)
   const [showNotification, setShowNotification] = useState(false);
   const navigate = useNavigate();
   const debounceRef = useRef(null);
@@ -185,12 +186,15 @@ export const DisasterList = ({ selectedDisaster, setSelectedDisaster }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
+        setLoading(true)
         const res = await getDisasterList(tag);
         if (Array.isArray(res)) {
           setDisasterList(res);
         }
       } catch (error) {
         console.error("Error fetching disasters:", error);
+      }finally{
+        setLoading(false)
       }
     };
 
@@ -251,6 +255,7 @@ export const DisasterList = ({ selectedDisaster, setSelectedDisaster }) => {
       />
 
       <ul className="space-y-2 mt-7 ">
+        {loading && <p className="text-gray-500 text-sm flex justify-center">Loading...</p>}
         {disasterList?.map((d) => {
           return (
             <li
